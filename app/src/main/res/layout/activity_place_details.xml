@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ascentColor"/>
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/pageTitle"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgView1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imgView2"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/imgView3"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginEnd="10dp"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp"
+                android:textColor="#333333"
+                android:text="🏔️ Welcome to Leh-Ladakh – the Land of High Passes!\n\nLeh-Ladakh is a paradise for adventure seekers and peace lovers alike. With its dramatic landscapes, crystal-clear skies, and spiritual calmness, this Himalayan region offers an unforgettable escape from the ordinary.\n\n✨ Why You’ll Love Leh-Ladakh:\n\n• 🏞️ Breathtaking views of Pangong Lake &amp; Nubra Valley.\n• 🏍️ Thrilling road trips on Khardung La &amp; Chang La.\n• 🛕 Ancient monasteries like Hemis &amp; Thiksey.\n• 🌌 Unmatched stargazing under clear night skies.\n• 🧘‍♂️ Serene vibes and spiritual retreats.\n\nWhether it's biking, trekking, or soul-searching, Leh-Ladakh is where every path leads to wonder. 🌟"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TripMate</string>
+    <string name="welcomeMsg">Hi\nDo I know you?</string>
+    <string name="sign_up">Sign Up</string>
+</resources>
